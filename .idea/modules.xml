@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bottle-app/.idea/bottle-app.iml" filepath="$PROJECT_DIR$/../bottle-app/.idea/bottle-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/honey.iml" filepath="$PROJECT_DIR$/.idea/honey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../kobin-master/.idea/kobin-master.iml" filepath="$PROJECT_DIR$/../kobin-master/.idea/kobin-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mickroBlog/.idea/mickroBlog.iml" filepath="$PROJECT_DIR$/../mickroBlog/.idea/mickroBlog.iml" />
+    </modules>
+  </component>
+</project>
