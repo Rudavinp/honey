@@ -1,5 +1,6 @@
-from webob import Request, Response
+from webob import Request
 from parse import parse
+from response import Response
 
 import gunicorn
 
@@ -10,6 +11,8 @@ class API:
 
     def __call__(self, environ, start_response):
         print(1, self.routers)
+        print(7, start_response)
+
         request = Request(environ)
         response = self.handle_request(request, environ)
 
@@ -19,8 +22,8 @@ class API:
         #     ('Content-type', 'text/plain'),
         #     ('Content-Length', str(len(response_body)))
         # ]
-        # start_response(status, response_headers)
-        return response(environ, start_response)
+        start_response(response.status, response.headers)
+        return response.body
 
     def route(self, path):
         print(4, self.routers)
@@ -52,7 +55,7 @@ class API:
 
     def default_response(self, response):
         response.status_code = 404
-        response.text = 'Not found'
+        response.body = 'Not found'
 
 def server(host='127.0.0.1', port=8000, app=None):
     from wsgiref import simple_server

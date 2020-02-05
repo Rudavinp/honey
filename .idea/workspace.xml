@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae82e73c-68aa-4d0c-bc25-9ae5588e0e1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
@@ -25,8 +25,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../simple_wsgi.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Python.some">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -112,14 +113,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1830" height="243" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580795025839" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1580724435077">
+    <state x="482" y="187" width="1184" height="730" key="SettingsEditor" timestamp="1580903474809">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1580724435077" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580792838160">
+    <state x="482" y="187" width="1184" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1580903474809" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580895713594">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580792838160" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580895713594" />
     <state x="571" y="200" width="834" height="705" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580724777757">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
