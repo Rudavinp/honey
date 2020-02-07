@@ -12,7 +12,7 @@ def second(request, response, some):
 
 @app.route('/home/{name}')
 def home(request, response, name):
-    response.body= 'Привет,{} это главная страница'.format(name)
+    response.body = 'Привет,{} это главная страница'.format(name)
 
 
 server(app=app)

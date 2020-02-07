@@ -1,35 +1,28 @@
-from webob import Request
+from request import Request
 from parse import parse
 from response import Response
 
-import gunicorn
 
 class API:
     def __init__(self):
         self.routers = {}
-        print(2, self.routers)
 
     def __call__(self, environ, start_response):
-        print(1, self.routers)
-        print(7, start_response)
 
         request = Request(environ)
         response = self.handle_request(request, environ)
 
-        # response.text = 'Hello, World!'
-        # status = '201 OK'
-        # response_headers = [
-        #     ('Content-type', 'text/plain'),
-        #     ('Content-Length', str(len(response_body)))
-        # ]
         start_response(response.status, response.headers)
-        return response.body
+        print(environ.items())
+        print('++++++++++++++++++')
+        print(request.path)
+        for i in request.headers:
+            print(i)
+        return [str.encode(response.body)]
 
     def route(self, path):
-        print(4, self.routers)
         def wrapper(handler):
             self.routers[path] = handler
-            print(6, self.routers)
             return handler
         return wrapper
 
@@ -46,7 +39,6 @@ class API:
 
 
     def find_handler(self, request_path):
-        print(3, self.routers)
         for path, handler in self.routers.items():
             parse_result = parse(path, request_path)
             if parse_result is not None:
